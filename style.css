@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+#game {
+  display: inline-block;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#game-settings {
+  margin-bottom: 15px;
+}
+
+#game-board {
+  display: grid;
+  gap: 2px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+}
+
+.cell.revealed {
+  background: #eee;
+  cursor: default;
+}
+
+.cell.flagged {
+  background: #f4e842;
+}
+
+.cell.mine {
+  background: #e74c3c;
+  color: white;
+}
+
+.cell.number-1 { color: blue; }
+.cell.number-2 { color: green; }
+.cell.number-3 { color: red; }
+.cell.number-4 { color: darkblue; }
+.cell.number-5 { color: brown; }
+.cell.number-6 { color: cyan; }
+.cell.number-7 { color: black; }
+.cell.number-8 { color: gray; }
